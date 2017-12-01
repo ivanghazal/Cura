@@ -13,6 +13,8 @@
 		EB4D91221FD0677A009773E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4D91201FD0677A009773E6 /* Main.storyboard */; };
 		EB4D91241FD0677B009773E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D91231FD0677B009773E6 /* Assets.xcassets */; };
 		EB4D91271FD0677B009773E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4D91251FD0677B009773E6 /* LaunchScreen.storyboard */; };
+		EB4D912F1FD06B96009773E6 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D912E1FD06B96009773E6 /* Footer.swift */; };
+		EB4D91331FD0995D009773E6 /* lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D91321FD0995D009773E6 /* lib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EB4D91231FD0677B009773E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4D91261FD0677B009773E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4D91281FD0677B009773E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4D912E1FD06B96009773E6 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		EB4D91321FD0995D009773E6 /* lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		EB4D910E1FD0677A009773E6 = {
 			isa = PBXGroup;
 			children = (
+				EB4D91301FD09664009773E6 /* Lib */,
 				EB4D91191FD0677A009773E6 /* Cura */,
 				EB4D91181FD0677A009773E6 /* Products */,
 			);
@@ -65,6 +70,15 @@
 				EB4D91281FD0677B009773E6 /* Info.plist */,
 			);
 			path = Cura;
+			sourceTree = "<group>";
+		};
+		EB4D91301FD09664009773E6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				EB4D912E1FD06B96009773E6 /* Footer.swift */,
+				EB4D91321FD0995D009773E6 /* lib.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB4D911F1FD0677A009773E6 /* SecondViewController.swift in Sources */,
+				EB4D91331FD0995D009773E6 /* lib.swift in Sources */,
 				EB4D911B1FD0677A009773E6 /* AppDelegate.swift in Sources */,
+				EB4D912F1FD06B96009773E6 /* Footer.swift in Sources */,
 				EB4D911D1FD0677A009773E6 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
