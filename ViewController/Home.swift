@@ -8,10 +8,11 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
 
-    
+class Home: UIViewController {
+
     @IBOutlet weak var genderTextField: UITextField!
+    
     @IBOutlet weak var ageTextField: UITextField!
     
     @IBOutlet weak var nextButton: UIButton!
@@ -22,11 +23,8 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if let origImage = UIImage(named: "arrow_right") {
-        let tintedImage = origImage.withRenderingMode(.alwaysTemplate)
-            nextButton.setImage(tintedImage, for: .normal)
-            nextButton.tintColor = .white
-        }
+        changeColorImageInButton(button: nextButton, imageName: "arrow_right", color: .white)
+
     }
 
     override func didReceiveMemoryWarning() {

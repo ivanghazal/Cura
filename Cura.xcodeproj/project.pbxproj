@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CBEBF313C270F0A438149FC /* Pods_Cura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3A7F41C4852B0ED6EFC2DB /* Pods_Cura.framework */; };
 		EB4D911B1FD0677A009773E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D911A1FD0677A009773E6 /* AppDelegate.swift */; };
-		EB4D911D1FD0677A009773E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D911C1FD0677A009773E6 /* FirstViewController.swift */; };
-		EB4D911F1FD0677A009773E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D911E1FD0677A009773E6 /* SecondViewController.swift */; };
+		EB4D911D1FD0677A009773E6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D911C1FD0677A009773E6 /* Home.swift */; };
+		EB4D911F1FD0677A009773E6 /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D911E1FD0677A009773E6 /* Conditions.swift */; };
 		EB4D91221FD0677A009773E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4D91201FD0677A009773E6 /* Main.storyboard */; };
 		EB4D91241FD0677B009773E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D91231FD0677B009773E6 /* Assets.xcassets */; };
 		EB4D91271FD0677B009773E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4D91251FD0677B009773E6 /* LaunchScreen.storyboard */; };
 		EB4D912F1FD06B96009773E6 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D912E1FD06B96009773E6 /* Footer.swift */; };
 		EB4D91331FD0995D009773E6 /* lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D91321FD0995D009773E6 /* lib.swift */; };
+		EBA48A451FD241A1000F2589 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA48A441FD241A1000F2589 /* StyleKit.swift */; };
+		EBA48A471FD24246000F2589 /* woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA48A461FD24246000F2589 /* woman.swift */; };
+		EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B306E149FB31625697A87459 /* Pods-Cura.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cura.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cura/Pods-Cura.debug.xcconfig"; sourceTree = "<group>"; };
+		BB3A7F41C4852B0ED6EFC2DB /* Pods_Cura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1BE33FA9D2ADA8BE19EE5F /* Pods-Cura.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cura.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cura/Pods-Cura.release.xcconfig"; sourceTree = "<group>"; };
 		EB4D91171FD0677A009773E6 /* Cura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4D911A1FD0677A009773E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB4D911C1FD0677A009773E6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		EB4D911E1FD0677A009773E6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EB4D911C1FD0677A009773E6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EB4D911E1FD0677A009773E6 /* Conditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 		EB4D91211FD0677A009773E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB4D91231FD0677B009773E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4D91261FD0677B009773E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4D91281FD0677B009773E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB4D912E1FD06B96009773E6 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		EB4D91321FD0995D009773E6 /* lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib.swift; sourceTree = "<group>"; };
+		EBA48A441FD241A1000F2589 /* StyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
+		EBA48A461FD24246000F2589 /* woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woman.swift; sourceTree = "<group>"; };
+		EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,18 +45,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CBEBF313C270F0A438149FC /* Pods_Cura.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720E0205E6C4B37F05641134 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB3A7F41C4852B0ED6EFC2DB /* Pods_Cura.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E27D6AADD0F68E6058AD484F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B306E149FB31625697A87459 /* Pods-Cura.debug.xcconfig */,
+				BD1BE33FA9D2ADA8BE19EE5F /* Pods-Cura.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB4D910E1FD0677A009773E6 = {
 			isa = PBXGroup;
 			children = (
+				EBF0D0031FD35020003D9A56 /* ViewController */,
 				EB4D91301FD09664009773E6 /* Lib */,
 				EB4D91191FD0677A009773E6 /* Cura */,
 				EB4D91181FD0677A009773E6 /* Products */,
+				E27D6AADD0F68E6058AD484F /* Pods */,
+				720E0205E6C4B37F05641134 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				EB4D911A1FD0677A009773E6 /* AppDelegate.swift */,
-				EB4D911C1FD0677A009773E6 /* FirstViewController.swift */,
-				EB4D911E1FD0677A009773E6 /* SecondViewController.swift */,
 				EB4D91201FD0677A009773E6 /* Main.storyboard */,
 				EB4D91231FD0677B009773E6 /* Assets.xcassets */,
 				EB4D91251FD0677B009773E6 /* LaunchScreen.storyboard */,
@@ -77,8 +106,20 @@
 			children = (
 				EB4D912E1FD06B96009773E6 /* Footer.swift */,
 				EB4D91321FD0995D009773E6 /* lib.swift */,
+				EBA48A441FD241A1000F2589 /* StyleKit.swift */,
+				EBA48A461FD24246000F2589 /* woman.swift */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		EBF0D0031FD35020003D9A56 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */,
+				EB4D911C1FD0677A009773E6 /* Home.swift */,
+				EB4D911E1FD0677A009773E6 /* Conditions.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB4D912B1FD0677B009773E6 /* Build configuration list for PBXNativeTarget "Cura" */;
 			buildPhases = (
+				D0C642BD768E507B2F780F00 /* [CP] Check Pods Manifest.lock */,
 				EB4D91131FD0677A009773E6 /* Sources */,
 				EB4D91141FD0677A009773E6 /* Frameworks */,
 				EB4D91151FD0677A009773E6 /* Resources */,
+				4B99E768F3E27D778B2E798B /* [CP] Embed Pods Frameworks */,
+				D569E7859147EC149D64C64C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,16 +191,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B99E768F3E27D778B2E798B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cura/Pods-Cura-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C642BD768E507B2F780F00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D569E7859147EC149D64C64C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cura/Pods-Cura-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB4D91131FD0677A009773E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB4D911F1FD0677A009773E6 /* SecondViewController.swift in Sources */,
+				EBA48A471FD24246000F2589 /* woman.swift in Sources */,
+				EBA48A451FD241A1000F2589 /* StyleKit.swift in Sources */,
+				EB4D911F1FD0677A009773E6 /* Conditions.swift in Sources */,
+				EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */,
 				EB4D91331FD0995D009773E6 /* lib.swift in Sources */,
 				EB4D911B1FD0677A009773E6 /* AppDelegate.swift in Sources */,
 				EB4D912F1FD06B96009773E6 /* Footer.swift in Sources */,
-				EB4D911D1FD0677A009773E6 /* FirstViewController.swift in Sources */,
+				EB4D911D1FD0677A009773E6 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +386,7 @@
 		};
 		EB4D912C1FD0677B009773E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B306E149FB31625697A87459 /* Pods-Cura.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XY9ASL8HRQ;
@@ -305,6 +401,7 @@
 		};
 		EB4D912D1FD0677B009773E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1BE33FA9D2ADA8BE19EE5F /* Pods-Cura.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XY9ASL8HRQ;

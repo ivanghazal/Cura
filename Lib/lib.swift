@@ -33,6 +33,19 @@ func hexStringToUIColor (hex:String , alpha :Double) -> UIColor {
 }
 
 
+// change color image
+func changeColorImageInButton(button : UIButton , imageName : String , color : UIColor){
+    if let origImage = UIImage(named: imageName) {
+        let tintedImage = origImage.withRenderingMode(.alwaysTemplate)
+        button.setImage(tintedImage, for: .normal)
+        button.tintColor = color
+    }
+    
+}
+
+
+
+
 // check box design from Button
 class CheckBoxSwitch: UIButton {
     // Images
@@ -70,7 +83,8 @@ class CheckBoxSwitch: UIButton {
 // need  to customize it to one code ?????????
 
 
-@IBDesignable class layerShadow: UIView  {
+//@IBDesignable
+class layerShadow: UIView  {
     @IBInspectable  var cornerRadius: CGFloat = 0.0 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -104,7 +118,8 @@ class CheckBoxSwitch: UIButton {
         }
     }
 }
-@IBDesignable class buttonShadow: UIButton  {
+//@IBDesignable
+class buttonShadow: UIButton  {
     @IBInspectable  var cornerRadius: CGFloat = 0.0 {
         didSet {
             layer.cornerRadius = cornerRadius
