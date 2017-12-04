@@ -30,11 +30,17 @@ class MySemptomsBody: UIViewController {
         switchButton.layer.zPosition = 10
         showHeadButton.layer.zPosition = 10
         headView.layer.zPosition = 9
+    
         
         //fix button image color
         changeColorImageInButton(button: showBodyButton, imageName: "body", color: .white)
         let orangecolore = hexStringToUIColor(hex: "F77C12", alpha: 1.0)
         changeColorImageInButton(button: showListButton, imageName: "list", color: orangecolore)
+        showBodyButton.layer.cornerRadius = 5
+        showBodyButton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        showListButton.layer.cornerRadius = 5
+        showListButton.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+        
 
         // build the body layers .
         buildBodyLayer(parentLayer: self.layoutBody1, wommanBodyStatus: true)

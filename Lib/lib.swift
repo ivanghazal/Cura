@@ -17,7 +17,7 @@ func hexStringToUIColor (hex:String , alpha :Double) -> UIColor {
         cString.remove(at: cString.startIndex)
     }
     
-    if ((cString.characters.count) != 6) {
+    if ((cString.count) != 6) {
         return UIColor.gray
     }
     
@@ -84,7 +84,7 @@ class CheckBoxSwitch: UIButton {
 
 
 //@IBDesignable
-class layerShadow: UIView  {
+class layerShadow: UIView {
     @IBInspectable  var cornerRadius: CGFloat = 0.0 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -118,8 +118,8 @@ class layerShadow: UIView  {
         }
     }
 }
-//@IBDesignable
-class buttonShadow: UIButton  {
+//@IBDesignable ,UITableView
+class buttonShadow: UIButton   {
     @IBInspectable  var cornerRadius: CGFloat = 0.0 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -154,5 +154,38 @@ class buttonShadow: UIButton  {
     }
 }
 
-
+class tableViewShadow: UITableView   {
+    @IBInspectable  var cornerRadius: CGFloat = 0.0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+            //layer.masksToBounds = cornerRadius > 0
+            layer.masksToBounds = false
+        }
+    }
+    
+    
+    @IBInspectable  var shadowOpacity: Float = 0.0 {
+        didSet {
+            layer.shadowOpacity = shadowOpacity
+        }
+    }
+    
+    @IBInspectable  var shadowRadius: CGFloat = 0.0  {
+        didSet {
+            layer.shadowRadius = shadowRadius
+        }
+    }
+    
+    @IBInspectable  var shadowOffset: CGSize = CGSize(width: 0.0, height: 0.0)  {
+        didSet {
+            layer.shadowOffset = shadowOffset
+        }
+    }
+    
+    @IBInspectable  var shadowColor: UIColor? = UIColor(red: 157/255, green: 157/255, blue: 157/255, alpha: 1.0)  {
+        didSet {
+            layer.shadowColor = shadowColor?.cgColor
+        }
+    }
+}
 

@@ -18,7 +18,9 @@
 		EB4D91331FD0995D009773E6 /* lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D91321FD0995D009773E6 /* lib.swift */; };
 		EBA48A451FD241A1000F2589 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA48A441FD241A1000F2589 /* StyleKit.swift */; };
 		EBA48A471FD24246000F2589 /* woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA48A461FD24246000F2589 /* woman.swift */; };
+		EBB189671FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */; };
 		EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */; };
+		EBF0D0051FD3C236003D9A56 /* MySemptomsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,9 @@
 		EB4D91321FD0995D009773E6 /* lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib.swift; sourceTree = "<group>"; };
 		EBA48A441FD241A1000F2589 /* StyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
 		EBA48A461FD24246000F2589 /* woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woman.swift; sourceTree = "<group>"; };
+		EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListSemptomsTableViewCell.swift; path = ViewController/ListSemptomsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsBody.swift; sourceTree = "<group>"; };
+		EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */,
+				EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */,
 				EB4D911C1FD0677A009773E6 /* Home.swift */,
 				EB4D911E1FD0677A009773E6 /* Conditions.swift */,
+				EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -251,6 +257,8 @@
 				EB4D91331FD0995D009773E6 /* lib.swift in Sources */,
 				EB4D911B1FD0677A009773E6 /* AppDelegate.swift in Sources */,
 				EB4D912F1FD06B96009773E6 /* Footer.swift in Sources */,
+				EBB189671FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift in Sources */,
+				EBF0D0051FD3C236003D9A56 /* MySemptomsList.swift in Sources */,
 				EB4D911D1FD0677A009773E6 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
