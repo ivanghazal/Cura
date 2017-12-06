@@ -154,6 +154,7 @@ class buttonShadow: UIButton   {
     }
 }
 
+//@IBDesignable
 class tableViewShadow: UITableView   {
     @IBInspectable  var cornerRadius: CGFloat = 0.0 {
         didSet {
@@ -162,7 +163,6 @@ class tableViewShadow: UITableView   {
             layer.masksToBounds = false
         }
     }
-    
     
     @IBInspectable  var shadowOpacity: Float = 0.0 {
         didSet {

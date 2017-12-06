@@ -17,15 +17,41 @@ class MySemptomsList: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
- 
-    
+
     // array data
     var searchActive : Bool = false
     var section = ["Head"]
-    var data = ["San Francisco","New York","San Jose","Chicago","Los Angeles","Austin","Seattle","New York","San Jose","Chicago","Los Angeles","Austin","Seattle"]
+    var data = ["Agitation","Anxiety","Apathy","Bald spot (Hair)","Blackouts","Bleeding","Seattle","Brittle Hair","Broken Bone","Coma","Compulsive behavior","Confusion","Craving alchohol","Craving to eat ice , dirt or paper","Crawling sensation","Delusions","Depressed mood"]
+    
+    
     var filtered:[String] = []
     
     
+    //popup stuff
+    //---------------------------------
+    
+    @IBOutlet var popupView: UIView!
+    @IBOutlet weak var popupTableView: UITableView!
+    
+    @IBOutlet weak var popupPageNuberLabel: UILabel!
+    
+    @IBOutlet weak var popupQuestionLabel: UILabel!
+    
+    var refineList = ["first questions about " , "second question about other second question about othe rsecond question about other" , "none of abouve" ]
+    
+    var refineList2 = ["22first questions about " , "2second question about other second question about othe rsecond question about other" , "2none of abouve" ]
+    var curentData = [String]()
+    
+    
+    
+    // Data Insturcture
+    struct Object {
+        var  questionName :String!
+        var answersList :[(String,Int)]!
+    }
+    var objectArray = [Object]()
+    var nuThislistFromArray = 0
+    var ThislistFromArray :Object?
     
     
     override func viewDidLoad() {
@@ -48,12 +74,25 @@ class MySemptomsList: UIViewController, UITableViewDataSource, UITableViewDelega
         
         // search bar design
         searchBar.barTintColor = .white
+        
+        ///popup Stuf
+        //--------------
+        popupTableView.delegate = self
+        popupTableView.dataSource = self
+        
+        objectArray = [Object(questionName: "What is the color of your eye?", answersList: [("gray",0),("pink",1),("transpernt",0),("none of abouve",0)]),Object(questionName: "Do have any pain ?", answersList: [("sharp",0),("wide and warm",0),("on presure",0),("none",0)]),Object(questionName: "What is your pee color ", answersList: [("dark yellow",0),("brown to red",0),("transpernt",0)])]
+        ThislistFromArray = objectArray[0]
+        
+        popupPageNuberLabel.text = "1/\(objectArray.count)"
        /*
         searchBar.layer.borderColor = UIColor.blue.cgColor
         searchBar.layer.borderWidth = 1
         searchBar.layer.cornerRadius = 3.0
         searchBar.clipsToBounds = true
         */
+        
+        
+        curentData = refineList
         
     }
 
@@ -98,38 +137,141 @@ class MySemptomsList: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        var thisReturn :Int?
+        if tableView.tag == 1 {
+        thisReturn = 1
+        }else if tableView.tag == 2 {
+            thisReturn =  1
+        }
+        return thisReturn!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if(searchActive) {
-            return filtered.count
+      
+        var thisCount: Int?
+        
+        if tableView.tag == 1 {
+            if(searchActive) {
+                return filtered.count
+            }
+            thisCount =  data.count
+            
+        }else if tableView.tag == 2 {
+            thisCount = ThislistFromArray?.answersList.count
         }
-        return data.count;
+        
+        return thisCount!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell" , for :indexPath) as! ListSemptomsTableViewCell
         
-        if(searchActive){
-            cell.nameText.text = filtered[indexPath.row]
+        var cellReturn : UITableViewCell?
+        
+        if tableView.tag == 1 {
+        
+                let cell = tableView.dequeueReusableCell(withIdentifier: "Cell" , for :indexPath) as! ListSemptomsTableViewCell
             
-        } else {
-            cell.nameText.text = data[indexPath.row];
+                if(searchActive){
+                    cell.nameText.text = filtered[indexPath.row]
+                    
+                } else {
+                    cell.nameText.text = data[indexPath.row];
+                }
+            cellReturn = cell
+            
+        }else if tableView.tag == 2 {
+            popupQuestionLabel.text = ThislistFromArray?.questionName
+            let thisRefineCell = tableView.dequeueReusableCell(withIdentifier: "refineCell" , for :indexPath) as! RefineCellTableViewCell
+                thisRefineCell.questionLabel.text = ThislistFromArray?.answersList[indexPath.row].0
+                let thisRadio = ThislistFromArray?.answersList[indexPath.row].1
+            if thisRadio == 0{
+                thisRefineCell.unSelectedRadio()
+            }else{
+                
+                thisRefineCell.selectedRadio()
+            }
+                cellReturn = thisRefineCell
+
         }
         
-        return cell;
+        return cellReturn!
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if tableView.tag == 1{
         print("You selected cell #\(data[indexPath.row])!")
+        self.view.addSubview(popupView)
+
+        } else if tableView.tag == 2 {
+            print("You selected cell #\(String(describing: ThislistFromArray!.answersList[indexPath.row].0))!")
+            
+           // let thisRefineCell = tableView.cellForRow(at: indexPath) as! RefineCellTableViewCell
+            
+            //reset all radio to 0
+            for index in 0 ... (ThislistFromArray?.answersList.count)!-1{
+                ThislistFromArray?.answersList[index].1 = 0
+            }
+            // assign new select
+            ThislistFromArray?.answersList[indexPath.row].1 = 1
+            
+            tableView.reloadData()
+            
+
+        }
+        
+        
     }
     
-    
+   
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Head"
+        var thisTitleheader :String?
+         if tableView.tag == 1{
+                thisTitleheader = "Head"
+            }else if tableView.tag == 2 {
+           thisTitleheader = ""
+        }
+        return thisTitleheader!
+    }
+ 
+   
+    // change section background color
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
+        
+        view.tintColor = UIColor.white
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = UIColor.black
+        
+        if tableView.tag == 1{
+
+        }else if tableView.tag == 2 {
+            header.frame.size.height = 0
+        }
+    }
+ 
+
+    @IBAction func popupNextButtnClicked(_ sender: UIButton) {
+        
+        let totalNumListQuestions = objectArray.count-1
+        
+        if nuThislistFromArray < totalNumListQuestions {
+            nuThislistFromArray += 1
+            ThislistFromArray = objectArray[nuThislistFromArray]
+            popupPageNuberLabel.text = "\(nuThislistFromArray+1)/\(objectArray.count)"
+        popupTableView.reloadData()
+        } else {
+            print("Done")
+            
+        }
+    
     }
     
+    @IBAction func popupSkipButtonClicked(_ sender: UIButton) {
+        
+    }
+    
+
     
     
     /*

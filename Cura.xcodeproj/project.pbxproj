@@ -19,6 +19,7 @@
 		EBA48A451FD241A1000F2589 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA48A441FD241A1000F2589 /* StyleKit.swift */; };
 		EBA48A471FD24246000F2589 /* woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA48A461FD24246000F2589 /* woman.swift */; };
 		EBB189671FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */; };
+		EBB189691FD78CD400C16BAB /* RefineCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189681FD78CD400C16BAB /* RefineCellTableViewCell.swift */; };
 		EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */; };
 		EBF0D0051FD3C236003D9A56 /* MySemptomsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		EBA48A441FD241A1000F2589 /* StyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
 		EBA48A461FD24246000F2589 /* woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woman.swift; sourceTree = "<group>"; };
 		EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListSemptomsTableViewCell.swift; path = ViewController/ListSemptomsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		EBB189681FD78CD400C16BAB /* RefineCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefineCellTableViewCell.swift; sourceTree = "<group>"; };
 		EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsBody.swift; sourceTree = "<group>"; };
 		EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 			children = (
 				EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */,
 				EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */,
+				EBB189681FD78CD400C16BAB /* RefineCellTableViewCell.swift */,
 				EB4D911C1FD0677A009773E6 /* Home.swift */,
 				EB4D911E1FD0677A009773E6 /* Conditions.swift */,
 				EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */,
@@ -252,6 +255,7 @@
 			files = (
 				EBA48A471FD24246000F2589 /* woman.swift in Sources */,
 				EBA48A451FD241A1000F2589 /* StyleKit.swift in Sources */,
+				EBB189691FD78CD400C16BAB /* RefineCellTableViewCell.swift in Sources */,
 				EB4D911F1FD0677A009773E6 /* Conditions.swift in Sources */,
 				EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */,
 				EB4D91331FD0995D009773E6 /* lib.swift in Sources */,
