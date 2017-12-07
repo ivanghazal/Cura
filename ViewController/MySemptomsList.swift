@@ -57,6 +57,10 @@ class MySemptomsList: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //remove topmenu and footer
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
+        
         //fix button image color
         let orangecolore = hexStringToUIColor(hex: "F77C12", alpha: 1.0)
         changeColorImageInButton(button: showBodyButton, imageName: "body", color: orangecolore)
@@ -224,7 +228,7 @@ class MySemptomsList: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-   
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         var thisTitleheader :String?
          if tableView.tag == 1{
@@ -235,21 +239,29 @@ class MySemptomsList: UIViewController, UITableViewDataSource, UITableViewDelega
         return thisTitleheader!
     }
  
-   
+      
     // change section background color
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
+        
+        tableView.backgroundView?.backgroundColor = .white
+        tableView.tintColor = .white
+        tableView.backgroundColor = .white
         
         view.tintColor = UIColor.white
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = UIColor.black
-        
+        header.textLabel?.font = UIFont(name: "Avenir", size: 16.0 )
+       
         if tableView.tag == 1{
 
         }else if tableView.tag == 2 {
             header.frame.size.height = 0
         }
     }
+
+    
  
+    
 
     @IBAction func popupNextButtnClicked(_ sender: UIButton) {
         

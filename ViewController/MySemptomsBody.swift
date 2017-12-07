@@ -25,6 +25,10 @@ class MySemptomsBody: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //remove topmenu and footer 
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
+        
         headView.isHidden = true
         
         switchButton.layer.zPosition = 10

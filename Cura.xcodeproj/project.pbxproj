@@ -20,6 +20,9 @@
 		EBA48A471FD24246000F2589 /* woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA48A461FD24246000F2589 /* woman.swift */; };
 		EBB189671FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */; };
 		EBB189691FD78CD400C16BAB /* RefineCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189681FD78CD400C16BAB /* RefineCellTableViewCell.swift */; };
+		EBB1898F1FD906C200C16BAB /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1898E1FD906C200C16BAB /* MainMenuViewController.swift */; };
+		EBB189931FD933F700C16BAB /* ChoosenSemptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189921FD933F700C16BAB /* ChoosenSemptomsViewController.swift */; };
+		EBB189951FD9381E00C16BAB /* MainMenuNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189941FD9381E00C16BAB /* MainMenuNavigationItem.swift */; };
 		EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */; };
 		EBF0D0051FD3C236003D9A56 /* MySemptomsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		EBA48A461FD24246000F2589 /* woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woman.swift; sourceTree = "<group>"; };
 		EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListSemptomsTableViewCell.swift; path = ViewController/ListSemptomsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		EBB189681FD78CD400C16BAB /* RefineCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefineCellTableViewCell.swift; sourceTree = "<group>"; };
+		EBB1898E1FD906C200C16BAB /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Lib/MainMenuViewController.swift; sourceTree = SOURCE_ROOT; };
+		EBB189921FD933F700C16BAB /* ChoosenSemptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosenSemptomsViewController.swift; sourceTree = "<group>"; };
+		EBB189941FD9381E00C16BAB /* MainMenuNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuNavigationItem.swift; sourceTree = "<group>"; };
 		EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsBody.swift; sourceTree = "<group>"; };
 		EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +116,8 @@
 		EB4D91301FD09664009773E6 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				EBB189941FD9381E00C16BAB /* MainMenuNavigationItem.swift */,
+				EBB1898E1FD906C200C16BAB /* MainMenuViewController.swift */,
 				EB4D912E1FD06B96009773E6 /* Footer.swift */,
 				EB4D91321FD0995D009773E6 /* lib.swift */,
 				EBA48A441FD241A1000F2589 /* StyleKit.swift */,
@@ -125,6 +133,7 @@
 				EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */,
 				EBB189681FD78CD400C16BAB /* RefineCellTableViewCell.swift */,
 				EB4D911C1FD0677A009773E6 /* Home.swift */,
+				EBB189921FD933F700C16BAB /* ChoosenSemptomsViewController.swift */,
 				EB4D911E1FD0677A009773E6 /* Conditions.swift */,
 				EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */,
 			);
@@ -253,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB1898F1FD906C200C16BAB /* MainMenuViewController.swift in Sources */,
 				EBA48A471FD24246000F2589 /* woman.swift in Sources */,
 				EBA48A451FD241A1000F2589 /* StyleKit.swift in Sources */,
 				EBB189691FD78CD400C16BAB /* RefineCellTableViewCell.swift in Sources */,
@@ -260,9 +270,11 @@
 				EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */,
 				EB4D91331FD0995D009773E6 /* lib.swift in Sources */,
 				EB4D911B1FD0677A009773E6 /* AppDelegate.swift in Sources */,
+				EBB189951FD9381E00C16BAB /* MainMenuNavigationItem.swift in Sources */,
 				EB4D912F1FD06B96009773E6 /* Footer.swift in Sources */,
 				EBB189671FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift in Sources */,
 				EBF0D0051FD3C236003D9A56 /* MySemptomsList.swift in Sources */,
+				EBB189931FD933F700C16BAB /* ChoosenSemptomsViewController.swift in Sources */,
 				EB4D911D1FD0677A009773E6 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
