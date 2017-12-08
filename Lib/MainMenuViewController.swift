@@ -20,6 +20,9 @@ class MainMenuViewController: UINavigationController {
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         
+
+     
+        
     }
 
 

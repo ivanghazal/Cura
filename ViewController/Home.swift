@@ -25,6 +25,8 @@ class Home: UIViewController {
         
         changeColorImageInButton(button: nextButton, imageName: "arrow_right", color: .white)
         
+        self.navigationItem.rightBarButtonItem?.image? = (UIImage(named: "user")?.withRenderingMode(.alwaysOriginal))!
+        self.navigationItem.leftBarButtonItem?.image? = (UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal))!
 
     }
 
