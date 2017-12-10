@@ -8,5 +8,5 @@ target 'Cura' do
   use_frameworks!
 
   # Pods for Cura
-
+pod 'IQKeyboardManagerSwift'
 end

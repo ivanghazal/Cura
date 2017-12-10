@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class MySemptomsList: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var showBodyButton: UIButton!
@@ -95,10 +96,23 @@ class MySemptomsList: UIViewController, UITableViewDataSource, UITableViewDelega
         searchBar.clipsToBounds = true
         */
         
-        
         curentData = refineList
         
+        
+        
+        // hide keyboard
+        self.hideKeyboardOnTap(#selector(self.dismissKeyboard))
     }
+    
+    // hide keyboard
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+        // do aditional stuff
+    }
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

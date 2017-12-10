@@ -8,6 +8,10 @@
 
 import Foundation
 import UIKit
+
+
+
+
 // convert Hex color with alpha to UIColor
 
 func hexStringToUIColor (hex:String , alpha :Double) -> UIColor {
@@ -152,6 +156,7 @@ class buttonShadow: UIButton   {
             layer.shadowColor = shadowColor?.cgColor
         }
     }
+    
 }
 
 //@IBDesignable
