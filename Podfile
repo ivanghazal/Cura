@@ -9,4 +9,5 @@ target 'Cura' do
 
   # Pods for Cura
 pod 'IQKeyboardManagerSwift'
+pod 'UICircularProgressRing'
 end

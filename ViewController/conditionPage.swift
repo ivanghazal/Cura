@@ -1,40 +1,49 @@
 //
-//  MainMenuViewController.swift
+//  conditionPage.swift
 //  Cura
 //
-//  Created by Ivan Ghazal on 12/6/17.
+//  Created by Ivan Ghazal on 12/12/17.
 //  Copyright © 2017 Ivan Ghazal. All rights reserved.
 //
 
 import UIKit
 
-class MainMenuViewController: UINavigationController {
+class conditionPage: UIViewController {
 
-    @IBOutlet weak var mainMenu: UINavigationBar!
+    
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    
+    
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-       mainMenu.barTintColor =  hexStringToUIColor(hex: "1D9AC1", alpha: 1.0)
-        mainMenu.backgroundColor =  hexStringToUIColor(hex: "1D9AC1", alpha: 1.0)
-        UINavigationBar.appearance().shadowImage = UIImage()
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         
-
-
+        shareButton.layer.cornerRadius = 5
+        shareButton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        saveButton.layer.cornerRadius = 5
+        saveButton.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+    
     }
 
-
-
+   
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
+    }
+    
+    @IBAction func backButtonClicked(_ sender: UIBarButtonItem) {
+        self.navigationController!.popViewController(animated: true)
+            
         
     }
     
-
     /*
     // MARK: - Navigation
 

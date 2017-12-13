@@ -15,6 +15,8 @@ class ChoosenSemptomsViewController: UIViewController  , UITableViewDataSource, 
     
     @IBOutlet weak var mySymptomsTableView: UITableView!
     
+    @IBOutlet var popupFrame: UIView!
+    
     
     var sections = ["Head","Neck"]
     
@@ -107,6 +109,19 @@ class ChoosenSemptomsViewController: UIViewController  , UITableViewDataSource, 
         let footerCell = Bundle.main.loadNibNamed("TableCellBottom", owner: self, options: nil)?.first as! TableCellBottom
         
         return footerCell
+    }
+    
+    
+    @IBAction func editProfileClicked(_ sender: UIButton) {
+        popupFrame.frame = CGRect(x: 0, y: 0, width: self.view.frame.width-48, height: 320)
+        openPopup(thisUIView: popupFrame )
+    }
+    
+    
+    
+    @IBAction func popupOkClicked(_ sender: UIButton) {
+        
+        closePopup(thisUIView: popupFrame)
     }
     
     

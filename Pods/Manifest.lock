@@ -1,12 +1,15 @@
 PODS:
   - IQKeyboardManagerSwift (5.0.6)
+  - UICircularProgressRing (1.7.4)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - UICircularProgressRing
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  UICircularProgressRing: 5aca63423d913dc967661370e94e2af0770dd9cd
 
-PODFILE CHECKSUM: 7227a30a8747c01c132dcec85bf6d7261c363b91
+PODFILE CHECKSUM: eb1a7a48fb6778b15e4a9d36c2cbc10c004fb22e
 
 COCOAPODS: 1.2.0

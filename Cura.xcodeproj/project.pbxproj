@@ -27,6 +27,9 @@
 		EBB189C51FDA5C3B00C16BAB /* TableCellBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189C11FDA5C3B00C16BAB /* TableCellBottom.swift */; };
 		EBB189C61FDA5C3B00C16BAB /* TableCellTop.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB189C21FDA5C3B00C16BAB /* TableCellTop.xib */; };
 		EBB189CC1FDA5DC000C16BAB /* ChoosenSemptomsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB189CB1FDA5DC000C16BAB /* ChoosenSemptomsCell.swift */; };
+		EBC38BDD1FDF9B56008C9D67 /* PossibleConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC38BDC1FDF9B56008C9D67 /* PossibleConditions.swift */; };
+		EBCCCC2B1FE05E8700D49F17 /* cellPossibleConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCCC2A1FE05E8700D49F17 /* cellPossibleConditions.swift */; };
+		EBCCCC2D1FE0CB6400D49F17 /* conditionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCCC2C1FE0CB6400D49F17 /* conditionPage.swift */; };
 		EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */; };
 		EBF0D0051FD3C236003D9A56 /* MySemptomsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		EBB189C11FDA5C3B00C16BAB /* TableCellBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellBottom.swift; sourceTree = "<group>"; };
 		EBB189C21FDA5C3B00C16BAB /* TableCellTop.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCellTop.xib; sourceTree = "<group>"; };
 		EBB189CB1FDA5DC000C16BAB /* ChoosenSemptomsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChoosenSemptomsCell.swift; path = "/projects/2016/medical App/Swift/Cura/Lib/tableViewRounded/ChoosenSemptomsCell.swift"; sourceTree = "<absolute>"; };
+		EBC38BDC1FDF9B56008C9D67 /* PossibleConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleConditions.swift; sourceTree = "<group>"; };
+		EBCCCC2A1FE05E8700D49F17 /* cellPossibleConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellPossibleConditions.swift; sourceTree = "<group>"; };
+		EBCCCC2C1FE0CB6400D49F17 /* conditionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conditionPage.swift; sourceTree = "<group>"; };
 		EBF0D0011FD35016003D9A56 /* MySemptomsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsBody.swift; sourceTree = "<group>"; };
 		EBF0D0041FD3C236003D9A56 /* MySemptomsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySemptomsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +162,9 @@
 				EBB189921FD933F700C16BAB /* ChoosenSemptomsViewController.swift */,
 				EB4D911E1FD0677A009773E6 /* Conditions.swift */,
 				EBB189661FD50B0E00C16BAB /* ListSemptomsTableViewCell.swift */,
+				EBC38BDC1FDF9B56008C9D67 /* PossibleConditions.swift */,
+				EBCCCC2C1FE0CB6400D49F17 /* conditionPage.swift */,
+				EBCCCC2A1FE05E8700D49F17 /* cellPossibleConditions.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -286,8 +295,11 @@
 			files = (
 				EBB1898F1FD906C200C16BAB /* MainMenuViewController.swift in Sources */,
 				EBA48A471FD24246000F2589 /* woman.swift in Sources */,
+				EBCCCC2D1FE0CB6400D49F17 /* conditionPage.swift in Sources */,
+				EBCCCC2B1FE05E8700D49F17 /* cellPossibleConditions.swift in Sources */,
 				EBB189C51FDA5C3B00C16BAB /* TableCellBottom.swift in Sources */,
 				EBA48A451FD241A1000F2589 /* StyleKit.swift in Sources */,
+				EBC38BDD1FDF9B56008C9D67 /* PossibleConditions.swift in Sources */,
 				EBB189691FD78CD400C16BAB /* RefineCellTableViewCell.swift in Sources */,
 				EB4D911F1FD0677A009773E6 /* Conditions.swift in Sources */,
 				EBF0D0021FD35016003D9A56 /* MySemptomsBody.swift in Sources */,

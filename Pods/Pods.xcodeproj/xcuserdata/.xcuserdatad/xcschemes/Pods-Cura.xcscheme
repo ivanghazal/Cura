@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D512BE930293197A0A410D2C1E24012A'
+               BlueprintIdentifier = 'E60C47BE77B12C33A2896AE9FFFC4AFA'
                BlueprintName = 'Pods-Cura'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-Cura.framework'>
